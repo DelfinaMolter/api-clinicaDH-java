@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clinic</title>
+  <link rel="icon" type="image/x-icon" href="./assets/DH_Logo_Black.png">
+  <meta name="description" content="Digital House CTD | Proyecto integrador | Backend I y II"/>
+
+
+  <!-- ---------------- estilos compartidos de login y signup ---------------- -->
+  <link rel="stylesheet" href="./css/loginSignupStyles.css">
+
+
+
+  <!-- ---------------------- logica aplicada en register -------------------- -->
+  <script src="./js/crearTurno.js"></script>
+  <script src="./js/loaders.js"></script>
+
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <a href="/"><h1>Digital Clinic</h1></a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form>
+      <div class="form-header">
+        <h2>Registar un Turno</h2>
+      </div>
+
+      <label for="odontologo">Selecciona un Odontologo:</label>
+      <select name="odontologo" id="odontologo">
+        <option selected disabled>Selecciona un Odontologo</option>
+      </select>
+
+      <label for="paciente">Selecciona un Paciente:</label>
+      <select name="paciente" id="paciente">
+        <option selected disabled>Selecciona un Paciente</option>
+      </select>
+      <a style="margin: -10px 0px 20px;" href="./crearPaciente.html"><small>**Registrar un nuevo paciente</small> </a>
+      
+      <label for="turno">Seleccione un turno:</label>
+      <input type="datetime-local" id="turno">
+
+      <button type="submit">Confirmar Turno</button>
+    </form>
+
+    
+  </div>
+
+</body>
+
+</html>

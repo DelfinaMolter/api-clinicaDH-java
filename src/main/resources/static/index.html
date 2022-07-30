@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo App</title>
+  <link rel="icon" type="image/x-icon" href="./assets/DH_Logo_Black.png">
+  <meta name="description" content="Digital House CTD | Proyecto integrador | FRONTEND II" />
+
+  <!-- ----------------------------- estilos CSS ----------------------------- -->
+  <link rel="stylesheet" href="./css/homeStyles.css">
+
+  <!-- ------------------- libreria de iconos Fontawesome -------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- logica de la página -->
+  <script src="./js/home.js"></script>
+  <script src="./js/listarOdontologo.js"></script>
+  <script src="./js/listarPaciente.js"></script>
+  <script src="./js/listarTurno.js"></script>
+
+</head>
+
+<body>
+
+<!-- cabecera con barra de navegación -->
+<header class="container">
+    <nav>
+      <a href="/"><h1>Digital Clinic</h1></a>
+
+        <div class="user-info">
+            <div class="user-image"></div>
+            <button id="closeApp"><i class="fa-solid fa-right-from-bracket"></i> Cerrar sesión</button>
+        </div>
+    </nav>
+</header>
+<div class="nav_crear">
+  <a href="/crearOdontologo.html">Crear Odontologo</a>
+  <a href="/crearPaciente.html">Crear Paciente</a>
+  <a href="/crearTurno.html">Crear Turno</a>
+
+</div>
+
+<main class="container2">
+  <div class="nav_listar">
+    <a href="#odontologo" id="listar_odontologo">Mostrar Lista Odontologos</a>
+    <a href="#paciente" id="listar_paciente">Mostrar Lista Pacientes</a>
+    <a href="#turnos" id="listar_turno">Mostrar Lista Turnos</a>
+  </div>
+
+    <div class="listar hidden">
+
+    </div>
+
+</main>
+
+
+
+</body>
+
+</html>

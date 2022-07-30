@@ -1,0 +1,399 @@
+{
+	"info": {
+		"_postman_id": "1cc41da7-adda-4332-be4b-1a6f8deb2c2a",
+		"name": "Clinica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18546743"
+	},
+	"item": [
+		{
+			"name": "odontologo agregar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Karen\",\r\n    \"apellido\": \"Varela\",\r\n    \"matricula\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/odontologo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"odontologo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "odontologo modificar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Maria\",\r\n    \"apellido\": \"Varela\",\r\n    \"matricula\": \"987654\",\r\n    \"idOdontologo\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/odontologo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"odontologo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "odontologo listar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/odontologo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"odontologo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "odontologo buscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/odontologo/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"odontologo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "odontologo buscarPorNombre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/odontologo/name=Maria",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"odontologo",
+						"name=Maria"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "odontologo eliminarPorId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/odontologo/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"odontologo",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente agregar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Delfina\",\r\n    \"apellido\": \"Molter\",\r\n    \"dni\": \"35972449\",\r\n    \"domicilio\":{\r\n        \"calle\":\"jose\",\r\n        \"numero\":2261,\r\n        \"localidad\":\"Torcuato\",\r\n        \"provincia\":\"Buenos Aires\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/paciente",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente modificar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Romina\",\r\n    \"apellido\": \"Lopez\",\r\n    \"dni\": \"32568754\",\r\n    \"domicilio\":{\r\n        \"calle\":\"manuel\",\r\n        \"numero\":225,\r\n        \"localidad\":\"belgrano\",\r\n        \"provincia\":\"Buenos Aires\",\r\n        \"idDomicilio\":1\r\n    },\r\n    \"idPaciente\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/paciente",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente listar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/paciente",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"paciente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente buscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/paciente/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"paciente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "paciente eliminarPorId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/paciente/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"paciente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turno agregar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaYHora\": \"2021-10-10T11:25\",\r\n    \"odontologo\":{\"idOdontologo\": 1},\r\n    \"paciente\": {\"idPaciente\":2}\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/turno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"turno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turno modificar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fechaYHora\": \"2023-03-03T04:30\",\r\n    \"paciente\": {\"idPaciente\":2},\r\n    \"odontologo\": {\"idOdontologo\": 1},\r\n    \"idTurno\":2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/v1/turno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"turno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turno listar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/turno",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"turno"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turno buscarPorId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/turno/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"turno",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "turno eliminarPorId",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/v1/turno/2",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"turno",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

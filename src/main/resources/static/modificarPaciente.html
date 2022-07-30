@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Clinic</title>
+  <link rel="icon" type="image/x-icon" href="./assets/DH_Logo_Black.png">
+  <meta name="description" content="Digital House CTD | Proyecto integrador | Backend I y II"/>
+
+
+  <!-- ---------------- estilos compartidos de login y signup ---------------- -->
+  <link rel="stylesheet" href="./css/loginSignupStyles.css">
+
+
+  <!-- ---------------------- logica aplicada en register -------------------- -->
+  <script src="./js/modificarPaciente.js"></script>
+  <script src="./js/loaders.js"></script>
+
+</head>
+
+<body>
+  <header class="container">
+    <nav>
+      <a href="/"><h1>Digital Clinic</h1></a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form>
+      <div class="form-header">
+        <h2>Editar Paciente</h2>
+      </div>
+
+      <label for="inputNombre">Nombre</label>
+      <input id="inputNombre" type="text">
+
+      <label for="inputApellido">Apellido</label>
+      <input id="inputApellido" type="text">
+
+      <label for="inputDni">DNI</label>
+      <input id="inputDni" type="text">
+
+      <h5 style="margin-top:20px;">Domicilio:</h5>
+
+      <label for="inputCalle">Calle</label>
+      <input id="inputCalle" type="text">
+
+      <label for="inputNumero">Numero</label>
+      <input id="inputNumero" type="number">
+
+      <label for="inputLocalidad">Localidad</label>
+      <input id="inputLocalidad" type="text">
+      
+      <label for="inputProvincia">Provincia</label>
+      <input id="inputProvincia" type="text">
+
+      <button type="submit">Guardar </button>
+    </form>
+
+    
+  </div>
+
+</body>
+
+</html>
